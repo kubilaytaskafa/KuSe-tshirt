@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import RouterConfig from "./config/RouterConfig";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-6xl font-bold">Hello</h1>
+    <div className="px-4 md:px-16 lg:px-32">
+      <Navbar />
+      <RouterConfig />
     </div>
   );
 }
