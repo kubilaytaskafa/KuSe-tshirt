@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="pt-4 ">
+    <nav className="pt-4 mb-8 md:mb-12 ">
       <div className="flex items-center justify-between ">
         <Link to="/">
           <h4 className="text-3xl font-bold text-sky-600 italic">KuŞe</h4>
         </Link>
-        <div className=" items-center justify-between space-x-6 hidden md:block   ">
+        <div className=" items-center justify-between space-x-6 hidden md:flex   ">
           <Link
             to="/About"
             className="hover:underline font-medium transition duration-300"
@@ -40,7 +40,7 @@ const Navbar = () => {
         </button>
       </div>
       {isOpen && (
-        <div className=" md:hidden   flex flex-col  bg-white items-center py-2  space-y-3">
+        <div className=" md:hidden   flex flex-col  bg-white items-center py-2  space-y-3 transition duration-500">
           <Link
             to="/About"
             className="hover:underline font-medium transition duration-300"
